@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h3 {
+    @apply text-5xl;
+  }
+  h5 {
+    @apply text-xl font-bold;
+  }
+  h6 {
+    @apply text-lg font-bold;
+  }
+  header a {
+    @apply hover:text-[#ff6161] hover:underline;
+  }
+  footer a {
+    @apply hover:text-[#20406c] hover:underline;
+  }
+  button {
+    @apply bg-[#ff6161] px-6 py-3 rounded-full hover:bg-[#2b5792] focus:outline-none focus:ring focus:ring-[#4184de];
+  }
+}
+
+@layer utilities {
+  .px-page {
+    @apply px-8 sm:px-16;
+  }
+  .bg-primary {
+    @apply bg-[#152a46] text-white;
+  }
+  .bg-secondary {
+    @apply bg-[#eff4fa];
+  }
+  .triangle-br {
+    width: 0;
+    height: 0;
+    border-bottom: 200px solid #ffcd29;
+    border-left: 200px solid transparent;
+  }
+  .triangle-bl {
+    width: 0;
+    height: 0;
+    border-bottom: 190px solid #235597;
+    border-right: 190px solid transparent;
+  }
+
+  .circle-1\/4 {
+    width: 400px;
+    height: 400px;
+    background-color: #f1f7fd;
+    border-radius: 9999px 0 0 0;
+  }
+}
